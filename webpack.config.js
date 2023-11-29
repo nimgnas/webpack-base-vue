@@ -25,6 +25,7 @@ module.exports = {
     // output은 webpack config에 작성한 옵션들이 모두 동작하고 최종결과를 내어주는 옵션이다.
     // 그때 최종결과를 내어주는 옵션이 webpack config가 아닐 경우가 대부분
     path: path.resolve(__dirname, "dist"),
+    publicPath:"/",
     // 기존의 번들파일을 삭제하고 다시 생성
     clean: true,
 
@@ -66,5 +67,6 @@ module.exports = {
   ],
   devServer: {
     port: 8080,
+    historyApiFallback: true
   },
 };
