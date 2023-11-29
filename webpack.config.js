@@ -50,7 +50,10 @@ module.exports = {
         test: /\.s?css$/,
         // 여러개의 loader를 사용할때는 끝 index부터 평가된다. 순서가 중요.
         // css-loader로 css를 해석, vue-style-loader로 vue확장자의 style부분을 html쪽에 삽입이 가능하도록 만들어준다.
-        use: ["vue-style-loader", "css-loader", "sass-loader"],
+        use: ["vue-style-loader",
+              "css-loader", 
+              "postcss-loader", 
+              "sass-loader"],
       },
     ],
   },
