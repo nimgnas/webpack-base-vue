@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  // js와 vue3버전의 추천 규칙 사용
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
+  "rules": {
+    "vue/html-closing-bracket-newline": ["error", {
+      "singleline": "never",
+      "multiline": "never"
+    }]
+  }
+}
