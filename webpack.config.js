@@ -35,6 +35,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        // 제외할 것
+        exclude: /node_modules/,
+        // exclude: /node_modules\/(?!axios|XXXX|XXXX )/,
+        use: "babel-loader"
+      },
+      {
         // ".vue"로 끝나는 파일을 찾는다
         test: /\.vue$/,
         use: "vue-loader",

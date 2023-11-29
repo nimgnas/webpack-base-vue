@@ -1,0 +1,10 @@
+{   
+  // 최신 js 문법을 사용할 수 있게 해줌
+  "presets": ["@babel/preset-env"],
+  // 전역을 오염시키지 않고 babel 내부의 헬퍼 기술을 사용해 코드 변환 가능
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "corejs":3
+    }]
+  ]
+}
